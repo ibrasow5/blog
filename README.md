@@ -1,5 +1,4 @@
 # blog
 
 Projet réalisé par :
-Ibrahima Ndendé SOW
-Moustapha Mangane
+Ibrahima Ndendé SOW et Moustapha Mangane (GLSI B)
