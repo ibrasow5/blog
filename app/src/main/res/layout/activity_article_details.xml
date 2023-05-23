@@ -69,4 +69,32 @@
         android:background="@drawable/rounded_circle"
         android:src="@drawable/arrow_back" />
 
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp">
+
+        <Button
+            android:id="@+id/modifyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifier"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_border_button" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supprimer"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_border_button"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
 </RelativeLayout>

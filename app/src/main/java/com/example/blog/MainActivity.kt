@@ -41,9 +41,7 @@ class MainActivity : AppCompatActivity() {
         if (requestCode == REQUEST_CODE_ADD_ARTICLE && resultCode == Activity.RESULT_OK) {
             val article = data?.getSerializableExtra("article") as? Article
             if (article != null) {
-                // Ajoutez l'article à la liste
                 articleList.add(article)
-                // Notifiez l'adaptateur que des données ont été ajoutées
                 adapter.notifyDataSetChanged()
             }
         }

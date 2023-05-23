@@ -23,9 +23,9 @@ class ArticleAdapter(private val articleList: List<Article>) : RecyclerView.Adap
         val article = articleList[position]
         holder.titleTextView.text = article.title
 
-        val maxLength = 100 // Nombre maximal de caractères pour l'aperçu
+        val maxLength = 100
         val contentPreview = if (article.content.length > maxLength) {
-            article.content.substring(0, maxLength) + "..." // Ajoute des points de suspension si le contenu dépasse la longueur maximale
+            article.content.substring(0, maxLength) + "..."
         } else {
             article.content
         }

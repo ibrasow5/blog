@@ -8,7 +8,6 @@ import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.blog.Article
 
 
 class AddArticleActivity : AppCompatActivity() {
@@ -47,6 +46,6 @@ class AddArticleActivity : AppCompatActivity() {
 }
 
 
-private fun Intent.putExtra(s: String, article: Article) {
+private fun putExtra(s: String, article: Article) {
     TODO("Not yet implemented")
 }
