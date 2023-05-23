@@ -17,12 +17,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Initialisez le RecyclerView et l'adaptateur
         articlesRecyclerView = findViewById(R.id.articlesRecyclerView)
         adapter = ArticleAdapter(articleList)
 
+        // Définissez le gestionnaire de disposition (layout manager) du RecyclerView
         val layoutManager = LinearLayoutManager(this)
         articlesRecyclerView.layoutManager = layoutManager
 
+        // Attachez l'adaptateur au RecyclerView
         articlesRecyclerView.adapter = adapter
 
         val addButton: ImageButton = findViewById(R.id.addButton)
@@ -38,7 +41,9 @@ class MainActivity : AppCompatActivity() {
         if (requestCode == REQUEST_CODE_ADD_ARTICLE && resultCode == Activity.RESULT_OK) {
             val article = data?.getSerializableExtra("article") as? Article
             if (article != null) {
+                // Ajoutez l'article à la liste
                 articleList.add(article)
+                // Notifiez l'adaptateur que des données ont été ajoutées
                 adapter.notifyDataSetChanged()
             }
         }

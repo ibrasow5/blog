@@ -32,7 +32,6 @@ class AddArticleActivity : AppCompatActivity() {
                 Toast.makeText(this, "Veuillez saisir le contenu", Toast.LENGTH_SHORT).show()
             } else {
                 val article = Article(title, content)
-
                 val intent = Intent()
                 intent.putExtra("article", article)
                 setResult(Activity.RESULT_OK, intent)

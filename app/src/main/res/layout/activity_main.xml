@@ -21,6 +21,7 @@
         android:layout_below="@id/BlogTitle"
         android:orientation="vertical">
 
+        <!-- RecyclerView pour afficher la liste des articles -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/articlesRecyclerView"
             android:layout_width="match_parent"
